@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    background-color: #0c111b;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+
+}
+.navbar{
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 4%;
+    background: #0c111b;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+}
+.brand-logo{
+    height: 70px;
+}
+.nav-links{
+    margin-top: 10px;
+    display: flex;
+    list-style: none;
+
+}
+.nav-links a{
+    text-decoration: none;
+    margin-left: 20px;
+    text-transform: capitalize;
+    color: #fff;
+    opacity: 0.9;
+}
+.right-container{
+    display: block;
+    margin-left: auto;
+}
+.search-box{
+    border: none;
+    border-bottom: 1px solid #aaa;
+    background: transparent;
+    outline: none;
+    height: 30px;
+    color: #fff;
+    width: 250px;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 500;
+    transition: .5s;
+}
+
+.search-box:focus{
+    width: 400px;
+    border-color: #1f80e0;
+}
+
+.sub-btn{
+    background: #1f80e0;
+    height:30px;
+    padding: 0 20px;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    margin: 0 10px;
+
+
+}
+
+.login-link{
+    color:#fff;
+    opacity: 0.9;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight:700 ;
+    text-decoration: none;
+
+}
+
+/*  carosuel youtube vide0 */
+
+.swiper {
+    width: 80%;
+    padding: 20px 0;
+    height: 35vw;
+    border: 2px solid red;
+    margin-top: 80px;
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+
+  .swiper-slide img{
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+
+
+  /* ------------------- */
+
+
+
+.video-card-container{
+    position: relative;
+    width: 92%;
+    margin: auto;
+    height: 10vw;
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.video-card{
+    position: relative;
+    min-width: calc(100%/5 - 10px);
+    width: calc(100%/5 - 10px);
+    height: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    background: #030b17;
+}
+.card-video,
+.video-card-image{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.card-video{
+    position: absolute;
+}
+.video-card:hover .video-card-image{
+    display: none;
+}
+
+.title{
+    color:#fff;
+    opacity: 0.9;
+    padding-left: 4%;
+    text-transform: capitalize;
+    font-size: 22px;
+    font-weight: 500;
+
+}
+
+.movies-list{
+    width: 100%;
+    height: 220px;
+    position: relative;
+    margin: 10px 0 20px;
+}
+
+.card-container{
+    position: relative;
+    width: 92%;
+    padding-left: 10px ;
+    height:220px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    overflow-x: auto;
+    overflow-y:visible ;
+    scroll-behavior: smooth;
+
+}
+
+.card-container::-webkit-scrollbar{
+    display: none;
+}
+
+.card{
+    position: relative;
+    min-width: 150px;
+    width: 150px;
+    height: 200px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-right: 10px;
+    transition: .5s;
+    background: #000;
+}
+.card-image{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.card:hover .card-body{
+    opacity: 1;
+}
+.card-body{
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left:0;
+    z-index: 2;
+    background: linear-gradient(to bottom, rgba(4, 8, 15, 0), #192133 98%);
+    padding: 10px;
+    transition: 0.5s;
+}
+
+.name{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-top: 60%;
+}
+.des{
+    color: #fff;
+    opacity: 0.8;
+    margin: 5px 0;
+    font-weight:500;
+    font-size: 12px;
+}
+
+.watchlist-btn{
+    position: relative;
+    width:100%;
+    text-transform: capitalize;
+    background: none;
+    border: none;
+    font-weight: 500;
+    text-align:right;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 5px 0;
+    cursor: pointer;
+    padding: 10px 5px;
+    border-radius: 5px;
+
+
+}
+
+.watchlist-btn::before{
+    content: "";
+    position: absolute;
+    top:0;
+    left: -5px;
+    width: 35px;
+    height: 35px;
+    background-image: url(images/add.png);
+    background-size: cover;
+    transform: scale(0.4);
+}
+
+.watchlist-btn:hover{
+    color:#fff;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+
+
+/* left footer  */
+
+footer{
+    margin-top: calc(100vh - 10rem);
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    margin-bottom: 2rem;
+    border-top:1px solid white ;
+    padding-top: 3rem;
+    
+}
+
+.left-footer-links ul li{
+    list-style: none;
+}
+.left-footer-links ul li a{
+    color:#fff;
+    text-decoration: none;
+    opacity: 0.8;
+    text-transform: capitalize;
+    font-size: .95rem;
+}
+.left-footer-links ul{
+    display: flex;
+
+}
+.left-footer-links ul li{
+    margin-right: 1rem;
+}
+.left-footer-text{
+    margin-top: 2rem;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: .85rem;
+}
+
+.left-container{
+    width: 50rem;
+    position: relative;
+    left: 0;
+  
+}
+
+.right-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+
+}
+.right-social-icons{
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    flex-direction: column;
+}
+.connect-text{
+    color: #fff;
+    opacity: 0.8;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+}
+.social{
+    color: #fff;
+    opacity: 0.8;
+    font-size: .85rem;
+    background-color: rgb(51, 50, 50);
+    padding: .5rem;
+    margin-right: .8rem;
+    border-radius: 5px;
+}
+
+.right-play-store-app-store{
+    margin-left: 10rem;
+    display: flex;
+    
+}
+
+.icon-card{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    margin-left:.5rem ;
+    padding: .4rem;
+    background-color:rgb(51, 50, 50) ;
+}
+.play-icon span i{
+    font-size: 1.4rem;
+}
+.icon-card p{
+    font-size: .7rem;
+}
+.icon-card h1{
+    font-size: .9rem;
+    text-transform: capitalize;
+}
+
+
+/* responsive design */
+/* @media (max-width:820px) {
+    .swiper{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+} */
