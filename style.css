@@ -95,7 +95,6 @@ body{
     width: 80%;
     padding: 20px 0;
     height: 35vw;
-    border: 2px solid red;
     margin-top: 80px;
     margin-bottom: 3rem;
     display: flex;
@@ -376,10 +375,35 @@ footer{
 
 
 /* responsive design */
-/* @media (max-width:820px) {
-    .swiper{
-      display: flex;
-      justify-content: center;
-      align-items: center;
+@media (max-width:820px) {
+    .left-footer-links ul li a{
+        font-size: .6rem;
     }
-} */
+    .left-footer-text{
+        font-size: .6rem;
+    }
+    .connect-text{
+        font-size: .7rem;
+    }
+    .social-icons span i{
+        font-size: .7rem;
+        padding: .1rem;
+    }
+    .social-icons{
+        display: flex;
+    }
+    .text-icon p{
+        font-size: .6rem;
+    }
+    .text-icon h1{
+        font-size: .7rem;
+    }
+    .right-play-store-app-store{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+    }
+    .icon-card{
+        margin-bottom: .2rem;
+    }
+}
