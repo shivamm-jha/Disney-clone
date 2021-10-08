@@ -481,6 +481,7 @@ footer{
      
     /*------------------- for footer------------ */
     footer{
+        margin-top: 34rem;
         max-width: 90vw;
         display: flex;
         flex-direction: column;
