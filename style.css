@@ -40,6 +40,16 @@ body{
     color: #fff;
     opacity: 0.9;
 }
+.menu-btn
+{
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+}
+#click{
+    display: none;
+}
 .right-container{
     display: block;
     margin-left: auto;
@@ -411,17 +421,9 @@ footer{
         flex-direction: column;
     }
 }
-.menu-btn
-{
-    color: #fff;
-    font-size: 22px;
-    cursor: pointer;
-    display: none;
-}
-#click{
-    display: none;
-}
 
+
+/* for responsive side nav bar */
 @media (max-width:900px){
     .navbar ul{
         position: fixed;
@@ -473,5 +475,30 @@ footer{
     }
     #click:checked ~ .menu-btn i:before{
         content: "\f00d";
+    }
+
+
+     
+    /*------------------- for footer------------ */
+    footer{
+        max-width: 90vw;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .left-container{
+        width: 90vw;
+    }
+    .left-footer-text{
+        max-width: 90vw;
+    }
+    .footer-right-container{
+        width:90vw;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: row;
+        
     }
 }
