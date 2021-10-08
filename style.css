@@ -420,6 +420,9 @@ footer{
         display: flex;
         flex-direction: column;
     }
+    .video-card{
+        width: 50rem;
+    }
 }
 
 
@@ -480,6 +483,9 @@ footer{
 
      
     /*------------------- for footer------------ */
+    
+}
+@media (max-width:1220px){
     footer{
         margin-top: 34rem;
         max-width: 90vw;
